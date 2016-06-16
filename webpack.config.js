@@ -17,10 +17,10 @@ module.exports={
     demo2: './demo2/index.js',
     demo3: './demo3/index.js',
     demo4: './demo4/index.js',
-    demo5: './demo5/index.js'
+    demo5: './demo5/index.js',
     // demo5: './demo5/index.js',
-    // demo6: './demo6/index.js',
-    // demo7: './demo7/index.js',
+    demo6: './demo6/index.js',
+    demo7: './demo7/index.js'
     // demo8: './demo8/index.js'
   },
   output:{
@@ -40,8 +40,8 @@ module.exports={
     new HtmlWebpackplugin(htmlWebpackObjectGenerator('demo3')),
     new HtmlWebpackplugin(htmlWebpackObjectGenerator('demo4')),
     new HtmlWebpackplugin(htmlWebpackObjectGenerator('demo5')),
-    // new HtmlWebpackplugin(htmlWebpackObjectGenerator('demo6')),
-    // new HtmlWebpackplugin(htmlWebpackObjectGenerator('demo7')),
+    new HtmlWebpackplugin(htmlWebpackObjectGenerator('demo6')),
+    new HtmlWebpackplugin(htmlWebpackObjectGenerator('demo7')),
     // new HtmlWebpackplugin(htmlWebpackObjectGenerator('demo8')),
     new webpack.ProvidePlugin({
       $:'jquery',
